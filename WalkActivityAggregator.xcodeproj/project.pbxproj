@@ -13,6 +13,11 @@
 		947BDCFE2625DFBA007958CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 947BDCFC2625DFBA007958CA /* Main.storyboard */; };
 		947BDD002625DFBA007958CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 947BDCFF2625DFBA007958CA /* Assets.xcassets */; };
 		947BDD032625DFBA007958CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 947BDD012625DFBA007958CA /* LaunchScreen.storyboard */; };
+		947BDD132625DFBA007958CA /* WalkActivityAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947BDD122625DFBA007958CA /* WalkActivityAnalyzer.swift */; };
+		947BDD172625DFBA007958CA /* ManagerComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947BDD162625DFBA007958CA /* ManagerComponent.swift */; };
+		947BDD1A2625DFBA007958CA /* WalkDayActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947BDD192625DFBA007958CA /* WalkDayActivity.swift */; };
+		947BDD1E2625DFBA007958CA /* WalkHourActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947BDD1D2625DFBA007958CA /* WalkHourActivity.swift */; };
+		947BDD212625DFBA007958CA /* WalkActivityRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947BDD202625DFBA007958CA /* WalkActivityRecord.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		947BDCFF2625DFBA007958CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		947BDD022625DFBA007958CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		947BDD042625DFBA007958CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		947BDD122625DFBA007958CA /* WalkActivityAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkActivityAnalyzer.swift; sourceTree = "<group>"; };
+		947BDD162625DFBA007958CA /* ManagerComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerComponent.swift; sourceTree = "<group>"; };
+		947BDD192625DFBA007958CA /* WalkDayActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkDayActivity.swift; sourceTree = "<group>"; };
+		947BDD1D2625DFBA007958CA /* WalkHourActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkHourActivity.swift; sourceTree = "<group>"; };
+		947BDD202625DFBA007958CA /* WalkActivityRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkActivityRecord.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,9 @@
 		947BDCF52625DFBA007958CA /* WalkActivityAggregator */ = {
 			isa = PBXGroup;
 			children = (
+				947BDD0B2625DFBA007958CA /* Model */,
+				947BDD0C2625DFBA007958CA /* ModelManager */,
+				947BDD0D2625DFBA007958CA /* Service */,
 				947BDCF62625DFBA007958CA /* AppDelegate.swift */,
 				947BDCF82625DFBA007958CA /* SceneDelegate.swift */,
 				947BDCFA2625DFBA007958CA /* ViewController.swift */,
@@ -65,6 +78,32 @@
 				947BDD042625DFBA007958CA /* Info.plist */,
 			);
 			path = WalkActivityAggregator;
+			sourceTree = "<group>";
+		};
+		947BDD0B2625DFBA007958CA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				947BDD202625DFBA007958CA /* WalkActivityRecord.swift */,
+				947BDD1D2625DFBA007958CA /* WalkHourActivity.swift */,
+				947BDD192625DFBA007958CA /* WalkDayActivity.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		947BDD0C2625DFBA007958CA /* ModelManager */ = {
+			isa = PBXGroup;
+			children = (
+				947BDD162625DFBA007958CA /* ManagerComponent.swift */,
+				947BDD122625DFBA007958CA /* WalkActivityAnalyzer.swift */,
+			);
+			path = ModelManager;
+			sourceTree = "<group>";
+		};
+		947BDD0D2625DFBA007958CA /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +176,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				947BDD1A2625DFBA007958CA /* WalkDayActivity.swift in Sources */,
 				947BDCFB2625DFBA007958CA /* ViewController.swift in Sources */,
 				947BDCF72625DFBA007958CA /* AppDelegate.swift in Sources */,
+				947BDD132625DFBA007958CA /* WalkActivityAnalyzer.swift in Sources */,
+				947BDD172625DFBA007958CA /* ManagerComponent.swift in Sources */,
 				947BDCF92625DFBA007958CA /* SceneDelegate.swift in Sources */,
+				947BDD212625DFBA007958CA /* WalkActivityRecord.swift in Sources */,
+				947BDD1E2625DFBA007958CA /* WalkHourActivity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
