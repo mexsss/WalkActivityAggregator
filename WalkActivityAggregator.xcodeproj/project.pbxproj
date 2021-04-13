@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		947BDCF72625DFBA007958CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947BDCF62625DFBA007958CA /* AppDelegate.swift */; };
 		947BDCF92625DFBA007958CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947BDCF82625DFBA007958CA /* SceneDelegate.swift */; };
-		947BDCFB2625DFBA007958CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947BDCFA2625DFBA007958CA /* ViewController.swift */; };
 		947BDCFE2625DFBA007958CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 947BDCFC2625DFBA007958CA /* Main.storyboard */; };
 		947BDD002625DFBA007958CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 947BDCFF2625DFBA007958CA /* Assets.xcassets */; };
 		947BDD032625DFBA007958CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 947BDD012625DFBA007958CA /* LaunchScreen.storyboard */; };
@@ -24,13 +23,18 @@
 		947BDD302625DFBA007958CA /* DateExpanded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947BDD2F2625DFBA007958CA /* DateExpanded.swift */; };
 		947BDD342625DFBA007958CA /* TextFileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947BDD332625DFBA007958CA /* TextFileReader.swift */; };
 		947BDD372625DFBA007958CA /* CSVParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947BDD362625DFBA007958CA /* CSVParser.swift */; };
+		947BDD3C2625E3D0007958CA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947BDD3B2625E3D0007958CA /* MainViewController.swift */; };
+		947BDD402625E3E0007958CA /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947BDD3F2625E3E0007958CA /* MainView.swift */; };
+		947BDD432625E3F3007958CA /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 947BDD422625E3F3007958CA /* MainView.xib */; };
+		947BDD472625E42A007958CA /* XIBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947BDD452625E42A007958CA /* XIBView.swift */; };
+		947BDD482625E42A007958CA /* UIView+XIB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947BDD462625E42A007958CA /* UIView+XIB.swift */; };
+		947BDD4D2625E4B3007958CA /* mobile_test_inputs.csv in Resources */ = {isa = PBXBuildFile; fileRef = 947BDD4C2625E4B3007958CA /* mobile_test_inputs.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		947BDCF32625DFBA007958CA /* WalkActivityAggregator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalkActivityAggregator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		947BDCF62625DFBA007958CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		947BDCF82625DFBA007958CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		947BDCFA2625DFBA007958CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		947BDCFD2625DFBA007958CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		947BDCFF2625DFBA007958CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		947BDD022625DFBA007958CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -46,6 +50,12 @@
 		947BDD2F2625DFBA007958CA /* DateExpanded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExpanded.swift; sourceTree = "<group>"; };
 		947BDD332625DFBA007958CA /* TextFileReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFileReader.swift; sourceTree = "<group>"; };
 		947BDD362625DFBA007958CA /* CSVParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVParser.swift; sourceTree = "<group>"; };
+		947BDD3B2625E3D0007958CA /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		947BDD3F2625E3E0007958CA /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		947BDD422625E3F3007958CA /* MainView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
+		947BDD452625E42A007958CA /* XIBView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XIBView.swift; sourceTree = "<group>"; };
+		947BDD462625E42A007958CA /* UIView+XIB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+XIB.swift"; sourceTree = "<group>"; };
+		947BDD4C2625E4B3007958CA /* mobile_test_inputs.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mobile_test_inputs.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,9 +93,9 @@
 				947BDD0C2625DFBA007958CA /* ModelManager */,
 				947BDD0D2625DFBA007958CA /* Service */,
 				947BDD2E2625DFBA007958CA /* Extensions */,
+				947BDD4B2625E48C007958CA /* Resources */,
 				947BDCF62625DFBA007958CA /* AppDelegate.swift */,
 				947BDCF82625DFBA007958CA /* SceneDelegate.swift */,
-				947BDCFA2625DFBA007958CA /* ViewController.swift */,
 				947BDCFC2625DFBA007958CA /* Main.storyboard */,
 				947BDCFF2625DFBA007958CA /* Assets.xcassets */,
 				947BDD012625DFBA007958CA /* LaunchScreen.storyboard */,
@@ -129,6 +139,8 @@
 			isa = PBXGroup;
 			children = (
 				947BDD2F2625DFBA007958CA /* DateExpanded.swift */,
+				947BDD462625E42A007958CA /* UIView+XIB.swift */,
+				947BDD452625E42A007958CA /* XIBView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -144,8 +156,19 @@
 		947BDD3A2625DFBA007958CA /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				947BDD3B2625E3D0007958CA /* MainViewController.swift */,
+				947BDD3F2625E3E0007958CA /* MainView.swift */,
+				947BDD422625E3F3007958CA /* MainView.xib */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		947BDD4B2625E48C007958CA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				947BDD4C2625E4B3007958CA /* mobile_test_inputs.csv */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,7 +229,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				947BDD032625DFBA007958CA /* LaunchScreen.storyboard in Resources */,
+				947BDD432625E3F3007958CA /* MainView.xib in Resources */,
 				947BDD002625DFBA007958CA /* Assets.xcassets in Resources */,
+				947BDD4D2625E4B3007958CA /* mobile_test_inputs.csv in Resources */,
 				947BDCFE2625DFBA007958CA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,7 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				947BDD1A2625DFBA007958CA /* WalkDayActivity.swift in Sources */,
-				947BDCFB2625DFBA007958CA /* ViewController.swift in Sources */,
+				947BDD472625E42A007958CA /* XIBView.swift in Sources */,
 				947BDCF72625DFBA007958CA /* AppDelegate.swift in Sources */,
 				947BDD132625DFBA007958CA /* WalkActivityAnalyzer.swift in Sources */,
 				947BDD342625DFBA007958CA /* TextFileReader.swift in Sources */,
@@ -227,6 +252,9 @@
 				947BDD302625DFBA007958CA /* DateExpanded.swift in Sources */,
 				947BDD172625DFBA007958CA /* ManagerComponent.swift in Sources */,
 				947BDCF92625DFBA007958CA /* SceneDelegate.swift in Sources */,
+				947BDD482625E42A007958CA /* UIView+XIB.swift in Sources */,
+				947BDD402625E3E0007958CA /* MainView.swift in Sources */,
+				947BDD3C2625E3D0007958CA /* MainViewController.swift in Sources */,
 				947BDD2C2625DFBA007958CA /* WalkActivityExporter.swift in Sources */,
 				947BDD292625DFBA007958CA /* WalkActivityParser.swift in Sources */,
 				947BDD262625DFBA007958CA /* WalkActivityManager.swift in Sources */,

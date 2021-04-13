@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainView" customModule="WalkActivityAggregator" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicatorView" destination="R2N-Q6-mja" id="69q-8u-P8u"/>
+                <outlet property="analyzeButton" destination="Lr1-i0-uW5" id="zGy-SL-c3s"/>
+                <outlet property="progressLabel" destination="DGf-SJ-GJq" id="JJt-VR-7Xs"/>
+                <outlet property="shareButton" destination="ZYS-ae-4iK" id="Q0a-Al-ogI"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="wrY-MD-csG">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="R2N-Q6-mja">
+                    <rect key="frame" x="197" y="388" width="20" height="20"/>
+                </activityIndicatorView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DGf-SJ-GJq" userLabel="ProgressLabel">
+                    <rect key="frame" x="207" y="418" width="0.0" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="18" id="0R3-TF-WSX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" systemColor="systemGray2Color"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lr1-i0-uW5">
+                    <rect key="frame" x="180" y="446" width="54" height="30"/>
+                    <state key="normal" title="Analyze">
+                        <color key="titleColor" systemColor="labelColor"/>
+                    </state>
+                    <connections>
+                        <action selector="didSelectAnalyze:" destination="-1" eventType="touchUpInside" id="DtC-u4-bbw"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZYS-ae-4iK">
+                    <rect key="frame" x="162" y="481" width="90" height="30"/>
+                    <state key="normal" title="Share results">
+                        <color key="titleColor" systemColor="labelColor"/>
+                    </state>
+                    <connections>
+                        <action selector="didSelectShare:" destination="-1" eventType="touchUpInside" id="aQn-qo-2AT"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Aig-Qi-Smz"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Lr1-i0-uW5" firstAttribute="centerX" secondItem="Aig-Qi-Smz" secondAttribute="centerX" id="5dj-ku-Swj"/>
+                <constraint firstItem="DGf-SJ-GJq" firstAttribute="centerX" secondItem="Aig-Qi-Smz" secondAttribute="centerX" id="Ac8-5v-d2l"/>
+                <constraint firstItem="R2N-Q6-mja" firstAttribute="centerY" secondItem="wrY-MD-csG" secondAttribute="centerY" constant="-50" id="OW6-w6-q55"/>
+                <constraint firstItem="DGf-SJ-GJq" firstAttribute="top" secondItem="R2N-Q6-mja" secondAttribute="bottom" constant="10" id="Zqx-MJ-2JJ"/>
+                <constraint firstItem="R2N-Q6-mja" firstAttribute="centerX" secondItem="wrY-MD-csG" secondAttribute="centerX" id="aZX-9e-6eU"/>
+                <constraint firstItem="ZYS-ae-4iK" firstAttribute="top" secondItem="Lr1-i0-uW5" secondAttribute="bottom" constant="5" id="ezr-Br-WJD"/>
+                <constraint firstItem="Lr1-i0-uW5" firstAttribute="top" secondItem="DGf-SJ-GJq" secondAttribute="bottom" constant="10" id="gSJ-nO-LIB"/>
+                <constraint firstItem="ZYS-ae-4iK" firstAttribute="centerX" secondItem="Aig-Qi-Smz" secondAttribute="centerX" id="qIA-mD-IZR"/>
+            </constraints>
+            <point key="canvasLocation" x="-135" y="99"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
