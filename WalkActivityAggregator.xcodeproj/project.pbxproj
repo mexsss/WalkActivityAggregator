@@ -18,6 +18,12 @@
 		947BDD1A2625DFBA007958CA /* WalkDayActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947BDD192625DFBA007958CA /* WalkDayActivity.swift */; };
 		947BDD1E2625DFBA007958CA /* WalkHourActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947BDD1D2625DFBA007958CA /* WalkHourActivity.swift */; };
 		947BDD212625DFBA007958CA /* WalkActivityRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947BDD202625DFBA007958CA /* WalkActivityRecord.swift */; };
+		947BDD262625DFBA007958CA /* WalkActivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947BDD252625DFBA007958CA /* WalkActivityManager.swift */; };
+		947BDD292625DFBA007958CA /* WalkActivityParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947BDD282625DFBA007958CA /* WalkActivityParser.swift */; };
+		947BDD2C2625DFBA007958CA /* WalkActivityExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947BDD2B2625DFBA007958CA /* WalkActivityExporter.swift */; };
+		947BDD302625DFBA007958CA /* DateExpanded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947BDD2F2625DFBA007958CA /* DateExpanded.swift */; };
+		947BDD342625DFBA007958CA /* TextFileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947BDD332625DFBA007958CA /* TextFileReader.swift */; };
+		947BDD372625DFBA007958CA /* CSVParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947BDD362625DFBA007958CA /* CSVParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +40,12 @@
 		947BDD192625DFBA007958CA /* WalkDayActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkDayActivity.swift; sourceTree = "<group>"; };
 		947BDD1D2625DFBA007958CA /* WalkHourActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkHourActivity.swift; sourceTree = "<group>"; };
 		947BDD202625DFBA007958CA /* WalkActivityRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkActivityRecord.swift; sourceTree = "<group>"; };
+		947BDD252625DFBA007958CA /* WalkActivityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkActivityManager.swift; sourceTree = "<group>"; };
+		947BDD282625DFBA007958CA /* WalkActivityParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkActivityParser.swift; sourceTree = "<group>"; };
+		947BDD2B2625DFBA007958CA /* WalkActivityExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkActivityExporter.swift; sourceTree = "<group>"; };
+		947BDD2F2625DFBA007958CA /* DateExpanded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExpanded.swift; sourceTree = "<group>"; };
+		947BDD332625DFBA007958CA /* TextFileReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFileReader.swift; sourceTree = "<group>"; };
+		947BDD362625DFBA007958CA /* CSVParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,9 +78,11 @@
 		947BDCF52625DFBA007958CA /* WalkActivityAggregator */ = {
 			isa = PBXGroup;
 			children = (
+				947BDD392625DFBA007958CA /* Modules */,
 				947BDD0B2625DFBA007958CA /* Model */,
 				947BDD0C2625DFBA007958CA /* ModelManager */,
 				947BDD0D2625DFBA007958CA /* Service */,
+				947BDD2E2625DFBA007958CA /* Extensions */,
 				947BDCF62625DFBA007958CA /* AppDelegate.swift */,
 				947BDCF82625DFBA007958CA /* SceneDelegate.swift */,
 				947BDCFA2625DFBA007958CA /* ViewController.swift */,
@@ -93,8 +107,11 @@
 		947BDD0C2625DFBA007958CA /* ModelManager */ = {
 			isa = PBXGroup;
 			children = (
+				947BDD252625DFBA007958CA /* WalkActivityManager.swift */,
 				947BDD162625DFBA007958CA /* ManagerComponent.swift */,
+				947BDD282625DFBA007958CA /* WalkActivityParser.swift */,
 				947BDD122625DFBA007958CA /* WalkActivityAnalyzer.swift */,
+				947BDD2B2625DFBA007958CA /* WalkActivityExporter.swift */,
 			);
 			path = ModelManager;
 			sourceTree = "<group>";
@@ -102,8 +119,33 @@
 		947BDD0D2625DFBA007958CA /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				947BDD332625DFBA007958CA /* TextFileReader.swift */,
+				947BDD362625DFBA007958CA /* CSVParser.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		947BDD2E2625DFBA007958CA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				947BDD2F2625DFBA007958CA /* DateExpanded.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		947BDD392625DFBA007958CA /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				947BDD3A2625DFBA007958CA /* Main */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		947BDD3A2625DFBA007958CA /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,8 +222,14 @@
 				947BDCFB2625DFBA007958CA /* ViewController.swift in Sources */,
 				947BDCF72625DFBA007958CA /* AppDelegate.swift in Sources */,
 				947BDD132625DFBA007958CA /* WalkActivityAnalyzer.swift in Sources */,
+				947BDD342625DFBA007958CA /* TextFileReader.swift in Sources */,
+				947BDD372625DFBA007958CA /* CSVParser.swift in Sources */,
+				947BDD302625DFBA007958CA /* DateExpanded.swift in Sources */,
 				947BDD172625DFBA007958CA /* ManagerComponent.swift in Sources */,
 				947BDCF92625DFBA007958CA /* SceneDelegate.swift in Sources */,
+				947BDD2C2625DFBA007958CA /* WalkActivityExporter.swift in Sources */,
+				947BDD292625DFBA007958CA /* WalkActivityParser.swift in Sources */,
+				947BDD262625DFBA007958CA /* WalkActivityManager.swift in Sources */,
 				947BDD212625DFBA007958CA /* WalkActivityRecord.swift in Sources */,
 				947BDD1E2625DFBA007958CA /* WalkHourActivity.swift in Sources */,
 			);
