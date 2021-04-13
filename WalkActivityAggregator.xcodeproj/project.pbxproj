@@ -29,6 +29,7 @@
 		947BDD472625E42A007958CA /* XIBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947BDD452625E42A007958CA /* XIBView.swift */; };
 		947BDD482625E42A007958CA /* UIView+XIB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947BDD462625E42A007958CA /* UIView+XIB.swift */; };
 		947BDD4D2625E4B3007958CA /* mobile_test_inputs.csv in Resources */ = {isa = PBXBuildFile; fileRef = 947BDD4C2625E4B3007958CA /* mobile_test_inputs.csv */; };
+		947BDD502625E5A3007958CA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 947BDD4F2625E5A3007958CA /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		947BDD452625E42A007958CA /* XIBView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XIBView.swift; sourceTree = "<group>"; };
 		947BDD462625E42A007958CA /* UIView+XIB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+XIB.swift"; sourceTree = "<group>"; };
 		947BDD4C2625E4B3007958CA /* mobile_test_inputs.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mobile_test_inputs.csv; sourceTree = "<group>"; };
+		947BDD4F2625E5A3007958CA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				947BDD2E2625DFBA007958CA /* Extensions */,
 				947BDD4B2625E48C007958CA /* Resources */,
 				947BDCF62625DFBA007958CA /* AppDelegate.swift */,
+				947BDD4F2625E5A3007958CA /* README.md */,
 				947BDCF82625DFBA007958CA /* SceneDelegate.swift */,
 				947BDCFC2625DFBA007958CA /* Main.storyboard */,
 				947BDCFF2625DFBA007958CA /* Assets.xcassets */,
@@ -228,6 +231,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				947BDD502625E5A3007958CA /* README.md in Resources */,
 				947BDD032625DFBA007958CA /* LaunchScreen.storyboard in Resources */,
 				947BDD432625E3F3007958CA /* MainView.xib in Resources */,
 				947BDD002625DFBA007958CA /* Assets.xcassets in Resources */,
